@@ -1,73 +1,139 @@
-# Welcome to your Lovable project
+# 🌍 Plataforma Web para ONGs  
+> Uma solução digital completa para ampliar o impacto social de Organizações da Sociedade Civil.
 
-## Project info
+---
 
-**URL**: https://lovable.dev/projects/d9b1e0ed-c4bc-4240-9c25-4e136095edad
+## 📖 Sobre o Projeto
 
-## How can I edit this code?
+O **Terceiro Setor brasileiro** movimenta mais de **R$15 bilhões** por ano e emprega cerca de **3 milhões de pessoas**.  
+Contudo, apenas **30% das ONGs possuem presença digital adequada** — o que limita seu alcance e capacidade de engajamento.
 
-There are several ways of editing your application.
+Pensando nisso, este projeto propõe o desenvolvimento de uma **plataforma web profissional e responsiva** que permita às ONGs:
 
-**Use Lovable**
+- Divulgar seus **projetos sociais**;  
+- **Engajar voluntários** e captar recursos;  
+- Promover **transparência e comunicação** com a sociedade.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/d9b1e0ed-c4bc-4240-9c25-4e136095edad) and start prompting.
+---
 
-Changes made via Lovable will be committed automatically to this repo.
+## 🎯 Objetivo Geral
 
-**Use your preferred IDE**
+Desenvolver uma **plataforma completa** e **socialmente relevante**, aplicando conceitos de **HTML5, CSS3 e JavaScript**, com foco em **responsividade, acessibilidade e boas práticas web**.
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+---
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## 🧩 Objetivos Específicos
 
-Follow these steps:
+- 🧱 Criar estruturas **semânticas complexas** com **HTML5**;  
+- 🎨 Implementar **layouts responsivos** com **CSS3 avançado**;  
+- ⚙️ Adicionar **interatividade e dinamismo** com **JavaScript**;  
+- 🧩 Integrar práticas de **versionamento e acessibilidade**;  
+- 🚀 Simular um ambiente de **desenvolvimento profissional ágil**;  
+- 🧾 Produzir **documentação técnica clara e completa**.
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+---
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+## 👥 Personas
 
-# Step 3: Install the necessary dependencies.
-npm i
+| Tipo de Usuário     | Funções Principais |
+|----------------------|-------------------|
+| **Administrador** | Gerencia projetos, voluntários e doações; acompanha métricas. |
+| **Voluntário** | Descobre oportunidades e acompanha seu histórico. |
+| **Doador/Apoiador** | Conhece projetos, realiza doações e visualiza relatórios. |
+| **Visitante** | Explora informações institucionais e compartilha conteúdos. |
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+---
 
-**Edit a file directly in GitHub**
+## 💡 Funcionalidades Principais
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+✅ **Área institucional:** Missão, visão, valores e equipe.  
+✅ **Gestão de projetos:** Cadastro e exibição de projetos sociais.  
+✅ **Engajamento de voluntários:** Portal de oportunidades e histórico.  
+✅ **Captação de recursos:** Doações on-line e relatórios de transparência.  
+✅ **Blog e comunicação:** Notícias, eventos e publicações.  
 
-**Use GitHub Codespaces**
+---
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## 🧱 Estrutura da Entrega (Fundamentos e Estruturação)
 
-## What technologies are used for this project?
+### 🗂️ Páginas Obrigatórias
 
-This project is built with:
+| Página | Descrição |
+|--------|------------|
+| **index.html** | Página inicial com informações da ONG e contatos. |
+| **projetos.html** | Lista projetos sociais, voluntariado e doações. |
+| **cadastro.html** | Formulário completo de cadastro de voluntários/doadores. |
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+---
 
-## How can I deploy this project?
+### 📝 Formulário (cadastro.html)
 
-Simply open [Lovable](https://lovable.dev/projects/d9b1e0ed-c4bc-4240-9c25-4e136095edad) and click on Share -> Publish.
+Campos obrigatórios com **validação nativa HTML5** e **máscaras de input**:
 
-## Can I connect a custom domain to my Lovable project?
+- Nome Completo  
+- E-mail  
+- CPF  
+- Telefone  
+- Data de Nascimento  
+- Endereço  
+- CEP  
+- Cidade  
+- Estado  
 
-Yes, you can!
+🧩 **Requisitos Técnicos:**
+- Estrutura **semântica e acessível**;  
+- **Validação nativa HTML5** (`required`, `pattern`, `type`, etc.);  
+- **Máscaras interativas** (CPF, telefone, CEP);  
+- **Agrupamento lógico** com `<fieldset>` e `<legend>`;  
+- **Imagens em todas as páginas**.
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+---
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+## 📱 Requisitos Técnicos Gerais
+
+| Requisito | Descrição |
+|------------|------------|
+| **Responsividade** | Design *mobile-first*, compatível com tablets e desktops. |
+| **Desempenho** | Tempo de carregamento < 5s, lazy loading, minificação de arquivos. |
+| **Acessibilidade** | WCAG 2.1 AA, contraste adequado, suporte a leitores de tela. |
+| **Segurança** | HTTPS e validação de formulários. |
+| **SEO** | Estrutura semântica, meta tags e headings otimizados. |
+
+---
+
+## 🧰 Tecnologias Utilizadas
+
+| Tecnologia | Finalidade |
+|-------------|-------------|
+| 🧾 **HTML5** | Estrutura semântica e formulários avançados |
+| 🎨 **CSS3** | Estilização e layout responsivo |
+| ⚙️ **JavaScript** | Interatividade e validação dinâmica |
+| 🧩 **Git/GitHub** | Versionamento e colaboração |
+| 🧠 **WCAG 2.1** | Padrões de acessibilidade web |
+
+---
+
+## 🧑‍💻 Metodologia
+
+O desenvolvimento segue princípios de **metodologias ágeis (Scrum/Kanban)**, com:
+
+- Planejamento iterativo;  
+- Entregas parciais e revisões;  
+- Colaboração entre equipes;  
+- Documentação contínua e versionada.
+
+---
+
+## 🖼️ Layout Responsivo
+
+<div align="center">
+  <img src="https://img.shields.io/badge/Responsive-Yes-00c853?style=for-the-badge&logo=responsive" />
+  <br/><br/>
+  <img src="https://img.icons8.com/color/480/000000/responsive.png" width="200" alt="Layout Responsivo">
+</div>
+
+---
+
+## 📚 Estrutura de Pastas (Sugerida)
+
+
