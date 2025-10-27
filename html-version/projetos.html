@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nossos Projetos - Impacto Social</title>
+    <meta name="description" content="Conheça os projetos sociais do Impacto Social nas áreas de educação, alimentação e meio ambiente. Saiba como ajudar e fazer a diferença.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav-container">
+            <a href="index.html" class="logo-link">
+                <div class="logo-icon">
+                    <svg class="heart-icon" fill="white" viewBox="0 0 24 24" stroke="white" stroke-width="2">
+                        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                    </svg>
+                </div>
+                <span class="logo-text">Impacto Social</span>
+            </a>
+
+            <div class="nav-desktop">
+                <a href="index.html" class="nav-link">Início</a>
+                <a href="projetos.html" class="nav-link active">Projetos</a>
+                <a href="cadastro.html" class="btn btn-primary">Cadastre-se</a>
+            </div>
+
+            <button class="menu-toggle" onclick="toggleMenu()" aria-label="Toggle menu">
+                <svg class="menu-icon" id="menuIcon" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+        </nav>
+
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="index.html" class="nav-link" onclick="toggleMenu()">Início</a>
+            <a href="projetos.html" class="nav-link active" onclick="toggleMenu()">Projetos</a>
+            <a href="cadastro.html" class="btn btn-primary btn-full" onclick="toggleMenu()">Cadastre-se</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="projects-hero">
+            <div class="hero-decoration"></div>
+            <div class="container projects-hero-container">
+                <div class="projects-hero-content">
+                    <h1 class="projects-hero-title">Nossos Projetos Sociais</h1>
+                    <p class="projects-hero-description">
+                        Conheça as iniciativas que estão transformando vidas e comunidades em todo o Brasil. 
+                        Cada projeto é uma oportunidade de fazer a diferença.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Grid -->
+        <section class="projects-section">
+            <div class="container">
+                <div class="projects-header">
+                    <h2 class="section-title">Áreas de Atuação</h2>
+                    <p class="section-description">
+                        Trabalhamos em três pilares fundamentais para promover desenvolvimento sustentável e qualidade de vida.
+                    </p>
+                </div>
+
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-image-wrapper">
+                            <img src="../src/assets/project-education.jpg" alt="Educação para Todos" class="project-image">
+                            <span class="project-category">Educação</span>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Educação para Todos</h3>
+                            <p class="project-description">
+                                Oferecemos reforço escolar e atividades educacionais para crianças em situação de vulnerabilidade social.
+                            </p>
+                            <button class="btn btn-outline btn-full">
+                                Saiba Mais
+                                <svg class="btn-icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image-wrapper">
+                            <img src="../src/assets/project-food.jpg" alt="Combate à Fome" class="project-image">
+                            <span class="project-category">Alimentação</span>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Combate à Fome</h3>
+                            <p class="project-description">
+                                Distribuição de cestas básicas e refeições para famílias em situação de insegurança alimentar.
+                            </p>
+                            <button class="btn btn-outline btn-full">
+                                Saiba Mais
+                                <svg class="btn-icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image-wrapper">
+                            <img src="../src/assets/project-environment.jpg" alt="Sustentabilidade Ambiental" class="project-image">
+                            <span class="project-category">Meio Ambiente</span>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Sustentabilidade Ambiental</h3>
+                            <p class="project-description">
+                                Projetos de reflorestamento, reciclagem e educação ambiental para preservar nosso planeta.
+                            </p>
+                            <button class="btn btn-outline btn-full">
+                                Saiba Mais
+                                <svg class="btn-icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ods-text">
+                    <p>Todos os nossos projetos seguem os Objetivos de Desenvolvimento Sustentável (ODS) da ONU</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- How to Help Section -->
+        <section class="help-section">
+            <div class="container">
+                <div class="help-header">
+                    <h2 class="section-title">Como Você Pode Ajudar</h2>
+                    <p class="section-description">
+                        Existem várias formas de contribuir com nossos projetos. Escolha a que mais se adequa ao seu perfil.
+                    </p>
+                </div>
+
+                <div class="help-grid">
+                    <div class="help-card">
+                        <div class="help-icon-wrapper">
+                            <svg class="help-icon" viewBox="0 0 24 24" fill="white" stroke="white" stroke-width="2">
+                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="help-title">Seja Voluntário</h3>
+                        <p class="help-description">
+                            Dedique algumas horas do seu tempo para fazer a diferença na vida de outras pessoas.
+                        </p>
+                        <a href="cadastro.html" class="btn btn-primary btn-full">
+                            Cadastre-se
+                            <svg class="btn-icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <div class="help-card">
+                        <div class="help-icon-wrapper">
+                            <svg class="help-icon" viewBox="0 0 24 24" stroke="white" stroke-width="2" fill="none">
+                                <line x1="12" y1="1" x2="12" y2="23"></line>
+                                <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                            </svg>
+                        </div>
+                        <h3 class="help-title">Faça uma Doação</h3>
+                        <p class="help-description">
+                            Contribua financeiramente para que possamos expandir nossos projetos e alcançar mais pessoas.
+                        </p>
+                        <a href="#doar" class="btn btn-primary btn-full">
+                            Doar Agora
+                            <svg class="btn-icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <div class="help-card">
+                        <div class="help-icon-wrapper">
+                            <svg class="help-icon" viewBox="0 0 24 24" stroke="white" stroke-width="2" fill="none">
+                                <path d="M11 15l-3-3m0 0l3-3m-3 3h8"></path>
+                                <path d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="help-title">Seja Parceiro</h3>
+                        <p class="help-description">
+                            Empresas e organizações podem se tornar parceiras e potencializar nosso impacto social.
+                        </p>
+                        <a href="#parceria" class="btn btn-primary btn-full">
+                            Saiba Mais
+                            <svg class="btn-icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Donation Section -->
+        <section id="doar" class="donation-section">
+            <div class="container">
+                <div class="donation-wrapper">
+                    <div class="donation-card">
+                        <div class="donation-header">
+                            <div class="donation-icon-wrapper">
+                                <svg class="donation-icon" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none">
+                                    <line x1="12" y1="1" x2="12" y2="23"></line>
+                                    <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                                </svg>
+                            </div>
+                            <h2 class="donation-title">Faça uma Doação</h2>
+                            <p class="donation-description">
+                                Sua contribuição financeira nos ajuda a expandir nossos projetos e alcançar mais pessoas que precisam.
+                            </p>
+                        </div>
+
+                        <div class="donation-options">
+                            <div class="donation-option">
+                                <div class="donation-value primary">R$ 50</div>
+                                <p class="donation-impact">Alimenta 5 famílias por um dia</p>
+                            </div>
+                            <div class="donation-option">
+                                <div class="donation-value secondary">R$ 100</div>
+                                <p class="donation-impact">Material escolar para 10 crianças</p>
+                            </div>
+                            <div class="donation-option">
+                                <div class="donation-value accent">R$ 200</div>
+                                <p class="donation-impact">Planta 50 árvores nativas</p>
+                            </div>
+                        </div>
+
+                        <div class="bank-info">
+                            <h3 class="bank-info-title">Dados Bancários para Doação:</h3>
+                            <div class="bank-details">
+                                <p><strong>Banco:</strong> Banco do Brasil</p>
+                                <p><strong>Agência:</strong> 1234-5</p>
+                                <p><strong>Conta Corrente:</strong> 67890-1</p>
+                                <p><strong>CNPJ:</strong> 12.345.678/0001-90</p>
+                                <p class="bank-note">* Envie o comprovante para contato@impactosocial.org.br</p>
+                            </div>
+                        </div>
+
+                        <p class="donation-transparency">
+                            Todas as doações são transparentes e você receberá relatórios sobre como seu recurso foi aplicado.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content">
+                    <h2 class="cta-title">Pronto para Fazer a Diferença?</h2>
+                    <p class="cta-description">
+                        Cadastre-se agora e comece sua jornada como voluntário. Juntos podemos transformar realidades.
+                    </p>
+                    <a href="cadastro.html" class="btn btn-secondary btn-large">
+                        Quero Ser Voluntário
+                        <svg class="btn-icon" fill="currentColor" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <div class="logo-icon">
+                            <svg class="heart-icon" fill="white" viewBox="0 0 24 24" stroke="white" stroke-width="2">
+                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                            </svg>
+                        </div>
+                        <span class="logo-text">Impacto Social</span>
+                    </div>
+                    <p class="footer-description">
+                        Transformando vidas através da ação voluntária e solidariedade. Juntos construímos um futuro melhor.
+                    </p>
+                </div>
+
+                <div class="footer-column">
+                    <h3 class="footer-title">Links Rápidos</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="projetos.html">Projetos</a></li>
+                        <li><a href="cadastro.html">Cadastre-se</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3 class="footer-title">Contato</h3>
+                    <ul class="footer-contact">
+                        <li>
+                            <svg class="footer-icon" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                            contato@impactosocial.org.br
+                        </li>
+                        <li>
+                            <svg class="footer-icon" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                            </svg>
+                            (11) 3456-7890
+                        </li>
+                        <li>
+                            <svg class="footer-icon" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                            São Paulo, SP - Brasil
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3 class="footer-title">Siga-nos</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                <rect x="2" y="9" width="4" height="12"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg>
+                        </a>
+                    </div>
+                    <p class="social-text">
+                        Participe da nossa comunidade e acompanhe nossas ações sociais.
+                    </p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Impacto Social. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

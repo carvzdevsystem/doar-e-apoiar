@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Voluntário - Impacto Social</title>
+    <meta name="description" content="Cadastre-se como voluntário e faça parte da transformação social. Preencha o formulário e comece a fazer a diferença.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav-container">
+            <a href="index.html" class="logo-link">
+                <div class="logo-icon">
+                    <svg class="heart-icon" fill="white" viewBox="0 0 24 24" stroke="white" stroke-width="2">
+                        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                    </svg>
+                </div>
+                <span class="logo-text">Impacto Social</span>
+            </a>
+
+            <div class="nav-desktop">
+                <a href="index.html" class="nav-link">Início</a>
+                <a href="projetos.html" class="nav-link">Projetos</a>
+                <a href="cadastro.html" class="btn btn-primary">Cadastre-se</a>
+            </div>
+
+            <button class="menu-toggle" onclick="toggleMenu()" aria-label="Toggle menu">
+                <svg class="menu-icon" id="menuIcon" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+        </nav>
+
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="index.html" class="nav-link" onclick="toggleMenu()">Início</a>
+            <a href="projetos.html" class="nav-link" onclick="toggleMenu()">Projetos</a>
+            <a href="cadastro.html" class="btn btn-primary btn-full" onclick="toggleMenu()">Cadastre-se</a>
+        </div>
+    </header>
+
+    <main class="cadastro-main">
+        <div class="container">
+            <div class="cadastro-wrapper">
+                <!-- Hero Section -->
+                <div class="cadastro-hero">
+                    <div class="cadastro-icon-wrapper">
+                        <svg class="cadastro-icon" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none">
+                            <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="8.5" cy="7" r="4"></circle>
+                            <line x1="20" y1="8" x2="20" y2="14"></line>
+                            <line x1="23" y1="11" x2="17" y2="11"></line>
+                        </svg>
+                    </div>
+                    <h1 class="cadastro-title">Cadastro de Voluntário</h1>
+                    <p class="cadastro-description">
+                        Preencha o formulário abaixo para se tornar parte da nossa rede de voluntários. 
+                        Juntos podemos fazer a diferença!
+                    </p>
+                </div>
+
+                <div class="cadastro-grid">
+                    <!-- Image Section -->
+                    <div class="cadastro-image-card">
+                        <img src="../src/assets/cadastro-hero.jpg" alt="Pessoa preenchendo cadastro" class="cadastro-image">
+                    </div>
+
+                    <!-- Form Section -->
+                    <div class="cadastro-form-card">
+                        <div class="form-header">
+                            <h2 class="form-title">Dados Pessoais</h2>
+                            <p class="form-description">
+                                Todos os campos são obrigatórios. Seus dados estão protegidos pela LGPD.
+                            </p>
+                        </div>
+
+                        <form id="cadastroForm" class="cadastro-form">
+                            <!-- Nome Completo -->
+                            <div class="form-group">
+                                <label for="nome" class="form-label">Nome Completo</label>
+                                <input 
+                                    type="text" 
+                                    id="nome" 
+                                    name="nome" 
+                                    class="form-input" 
+                                    placeholder="Digite seu nome completo"
+                                    required
+                                    minlength="3"
+                                    maxlength="100"
+                                >
+                            </div>
+
+                            <!-- Email -->
+                            <div class="form-group">
+                                <label for="email" class="form-label">E-mail</label>
+                                <input 
+                                    type="email" 
+                                    id="email" 
+                                    name="email" 
+                                    class="form-input" 
+                                    placeholder="seu@email.com"
+                                    required
+                                    maxlength="255"
+                                >
+                            </div>
+
+                            <!-- CPF -->
+                            <div class="form-group">
+                                <label for="cpf" class="form-label">CPF</label>
+                                <input 
+                                    type="text" 
+                                    id="cpf" 
+                                    name="cpf" 
+                                    class="form-input" 
+                                    placeholder="000.000.000-00"
+                                    required
+                                    pattern="\d{3}\.\d{3}\.\d{3}-\d{2}"
+                                    maxlength="14"
+                                >
+                            </div>
+
+                            <!-- Telefone e Data de Nascimento -->
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="telefone" class="form-label">Telefone</label>
+                                    <input 
+                                        type="tel" 
+                                        id="telefone" 
+                                        name="telefone" 
+                                        class="form-input" 
+                                        placeholder="(00) 00000-0000"
+                                        required
+                                        pattern="\(\d{2}\) \d{5}-\d{4}"
+                                        maxlength="15"
+                                    >
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="dataNascimento" class="form-label">Data de Nascimento</label>
+                                    <input 
+                                        type="date" 
+                                        id="dataNascimento" 
+                                        name="dataNascimento" 
+                                        class="form-input"
+                                        required
+                                    >
+                                </div>
+                            </div>
+
+                            <!-- CEP -->
+                            <div class="form-group">
+                                <label for="cep" class="form-label">CEP</label>
+                                <input 
+                                    type="text" 
+                                    id="cep" 
+                                    name="cep" 
+                                    class="form-input" 
+                                    placeholder="00000-000"
+                                    required
+                                    pattern="\d{5}-\d{3}"
+                                    maxlength="9"
+                                >
+                            </div>
+
+                            <!-- Endereço -->
+                            <div class="form-group">
+                                <label for="endereco" class="form-label">Endereço</label>
+                                <input 
+                                    type="text" 
+                                    id="endereco" 
+                                    name="endereco" 
+                                    class="form-input" 
+                                    placeholder="Rua, número, complemento"
+                                    required
+                                    maxlength="200"
+                                >
+                            </div>
+
+                            <!-- Cidade e Estado -->
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="cidade" class="form-label">Cidade</label>
+                                    <input 
+                                        type="text" 
+                                        id="cidade" 
+                                        name="cidade" 
+                                        class="form-input" 
+                                        placeholder="Sua cidade"
+                                        required
+                                        maxlength="100"
+                                    >
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="estado" class="form-label">Estado</label>
+                                    <select id="estado" name="estado" class="form-select" required>
+                                        <option value="">Selecione</option>
+                                        <option value="AC">AC</option>
+                                        <option value="AL">AL</option>
+                                        <option value="AP">AP</option>
+                                        <option value="AM">AM</option>
+                                        <option value="BA">BA</option>
+                                        <option value="CE">CE</option>
+                                        <option value="DF">DF</option>
+                                        <option value="ES">ES</option>
+                                        <option value="GO">GO</option>
+                                        <option value="MA">MA</option>
+                                        <option value="MT">MT</option>
+                                        <option value="MS">MS</option>
+                                        <option value="MG">MG</option>
+                                        <option value="PA">PA</option>
+                                        <option value="PB">PB</option>
+                                        <option value="PR">PR</option>
+                                        <option value="PE">PE</option>
+                                        <option value="PI">PI</option>
+                                        <option value="RJ">RJ</option>
+                                        <option value="RN">RN</option>
+                                        <option value="RS">RS</option>
+                                        <option value="RO">RO</option>
+                                        <option value="RR">RR</option>
+                                        <option value="SC">SC</option>
+                                        <option value="SP">SP</option>
+                                        <option value="SE">SE</option>
+                                        <option value="TO">TO</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <!-- Submit Button -->
+                            <button type="submit" class="btn btn-primary btn-full btn-submit" id="submitBtn">
+                                Finalizar Cadastro
+                            </button>
+
+                            <p class="form-disclaimer">
+                                Ao se cadastrar, você concorda com nossos termos de uso e política de privacidade.
+                            </p>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Steps Cards -->
+                <div class="steps-grid">
+                    <div class="step-card">
+                        <div class="step-number primary">1</div>
+                        <h3 class="step-title">Cadastre-se</h3>
+                        <p class="step-description">
+                            Preencha o formulário com seus dados pessoais
+                        </p>
+                    </div>
+
+                    <div class="step-card">
+                        <div class="step-number secondary">2</div>
+                        <h3 class="step-title">Receba Contato</h3>
+                        <p class="step-description">
+                            Nossa equipe entrará em contato em até 48 horas
+                        </p>
+                    </div>
+
+                    <div class="step-card">
+                        <div class="step-number accent">3</div>
+                        <h3 class="step-title">Comece a Ajudar</h3>
+                        <p class="step-description">
+                            Participe de projetos e faça a diferença
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <div class="logo-icon">
+                            <svg class="heart-icon" fill="white" viewBox="0 0 24 24" stroke="white" stroke-width="2">
+                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                            </svg>
+                        </div>
+                        <span class="logo-text">Impacto Social</span>
+                    </div>
+                    <p class="footer-description">
+                        Transformando vidas através da ação voluntária e solidariedade. Juntos construímos um futuro melhor.
+                    </p>
+                </div>
+
+                <div class="footer-column">
+                    <h3 class="footer-title">Links Rápidos</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="projetos.html">Projetos</a></li>
+                        <li><a href="cadastro.html">Cadastre-se</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3 class="footer-title">Contato</h3>
+                    <ul class="footer-contact">
+                        <li>
+                            <svg class="footer-icon" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                            contato@impactosocial.org.br
+                        </li>
+                        <li>
+                            <svg class="footer-icon" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                            </svg>
+                            (11) 3456-7890
+                        </li>
+                        <li>
+                            <svg class="footer-icon" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                            São Paulo, SP - Brasil
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3 class="footer-title">Siga-nos</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                <rect x="2" y="9" width="4" height="12"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg>
+                        </a>
+                    </div>
+                    <p class="social-text">
+                        Participe da nossa comunidade e acompanhe nossas ações sociais.
+                    </p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Impacto Social. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
